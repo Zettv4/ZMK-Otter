@@ -1,0 +1,29 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        layers {
+            base_layer {
+                bindings = <
+                    &kp Q   &kp W   &kp F   &kp P   &kp G
+
+                    &kp A   &kp R   &kp S   &kp T   &kp D
+
+                    &kp Z   &kp X   &kp C   &kp V   &kp B
+
+                    /* Thumb row: NO, NO, Thumb key (1u), Spacebar (2u) */
+                    &kp NO  &kp NO  &kp MO(1) &kp SPC &kp SPC
+                >;
+            };
+
+            symbol_layer {
+                bindings = <
+                    &kp 1   &kp 2   &kp 3   &kp 4   &kp 5
+                    &kp 6   &kp 7   &kp 8   &kp 9   &kp 0
+                    &kp MINS   &kp EQL   &kp LBRC   &kp RBRC   &kp BSLS
+                    &kp NO    &kp NO   &kp NO    &kp NO   &kp NO
+                >;
+            };
+        };
+    };
+};

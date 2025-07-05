@@ -1,0 +1,28 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        layers {
+            base_layer {
+                bindings = <
+                    &kp J   &kp L   &kp U   &kp Y   &kp SCLN
+
+                    &kp H   &kp N   &kp E   &kp I   &kp O
+
+                    &kp M   &kp COMMA   &kp DOT   &kp SLSH   &kp PRINT_SCREEN
+
+                    &kp SPC &kp SPC &kp MO(1) &kp NO &kp NO
+                >;
+            };
+
+            symbol_layer {
+                bindings = <
+                    &kp 5   &kp 4   &kp 3   &kp 2   &kp 1
+                    &kp 0   &kp 9   &kp 8   &kp 7   &kp 6
+                    &kp BSLS &kp RBRC &kp LBRC &kp EQL &kp MINS
+                    &kp NO  &kp NO  &kp NO  &kp NO &kp NO
+                >;
+            };
+        };
+    };
+};

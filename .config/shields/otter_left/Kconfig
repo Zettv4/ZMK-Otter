@@ -1,0 +1,2 @@
+config SHIELD_OTTER
+    bool "Otter Keyboard Shield"
