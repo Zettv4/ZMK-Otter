@@ -1,0 +1,23 @@
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+
+    default_layer {
+      bindings = <
+        &kp Q     &kp W       &kp F        &kp P       &kp G
+        &kp A     &mt LCTRL S &mt LSHFT T  &kp D       &kp B
+        &kp Z     &kp X       &kp C        &kp V       &kp J
+        &kp ENTER &mo 2
+      >;
+    };
+
+    fn_layer {
+      bindings = <
+        &kp 1     &kp 2       &kp 3        &kp 4       &kp 5
+        &kp ESC   &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT
+        &kp TAB   &kp LALT    &kp LGUI     &kp LCTRL   &kp DEL
+        &trans    &trans
+      >;
+    };
+  };
+};
